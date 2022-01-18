@@ -23,6 +23,7 @@
   position: relative;
   z-index: 9999;
   width: calc( 120 / 375 * 100vw);
+  max-width: rem(150);
 }
 
 .header__logo {
@@ -34,21 +35,24 @@
 }
 
 .hamburger {
-  z-index: 9999;
+  display: none;
 
   @include mq('md'){
-    display: none;
+    display: block;
+    z-index: 9999;
   }
 }
 
 .hamburger span {
-  position: relative;
-  display: block;
-	height: rem(2);
-  width: rem(22);
-  background: $ac-color;
-  border-radius: rem(1);
-  transition: transform 0.3s ease 0s;
+  @include mq('md'){
+    position: relative;
+    display: block;
+    height: rem(2);
+    width: rem(22);
+    background: $ac-color;
+    border-radius: rem(1);
+    transition: transform 0.3s ease 0s;
+  }
 }
 
 .hamburger span:nth-child(1) {
@@ -90,17 +94,17 @@
 }
 
 .drawer-menu {
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: none;
-  opacity: 0;
-  transition: opacity 1s ease 0s;
+  display:none;
 
   @include mq('md'){
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: none;
+    opacity: 0;
+    transition: opacity 1s ease 0s;
   }
 }
 
@@ -126,11 +130,12 @@
 }
 
 .drawer-menu__item a {
+  font-family: $second-font-family;
+  color: $ac-color;
+  letter-spacing: 0.125em;
+  font-size: rem(16);
   width: inherit;
   height: inherit;
-  font-size: rem(16);
-  color: #000;
-  letter-spacing: 0.125em;
 }
 
 html.is-fixed {
@@ -145,10 +150,10 @@ pc-nav
 ===========================================*/
 .pc-nav {
   height: inherit;
-  display: none;
+  display: block;
 
   @include mq('md'){
-    display: block;
+    display: none;
   }
 }
 
@@ -163,29 +168,44 @@ pc-nav
 }
 
 .pc-nav__item a {
-  height: inherit;
+  font-family: $second-font-family;
+  font-size: rem(24);
+  letter-spacing: 0.05em;
   display: grid;
   place-items: center;
   padding: 0 rem(17.2);
-  font-size: rem(16);
   position :relative;
   transition: all 0.3s ease 0s;
-  letter-spacing: 0.05em;
+  color: $ac-color;
+  height: inherit;
 }
 
-.pc-nav__item a:hover::after {
-  @include mq('md'){
-    position: absolute;
-    content:"";
-    width: 80%;
-    height: 1px;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    // background-color: $yellow;
-    box-sizing: content-box;
-  }
+.pc-nav__item--contact a {
+  font-family: $second-font-family;
+  font-size: rem(24);
+  color: $white;
+  letter-spacing: 0.05em;
+  padding: rem(9) rem(17.2);
+  background-color: $ac-color;
+  border-radius: rem(30);
+  position :relative;
+  place-items: center;
+  // display: grid;
+  // height: inherit;
+  transition: all 0.3s ease 0s;
 }
+.pc-nav__item a:hover::after {
+  position: absolute;
+  content:"";
+  width: 80%;
+  height: 1px;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  // background-color: $yellow;
+  box-sizing: content-box;
+}
+
 .pc-nav__item.pc-nav__item--white {
   margin-left: rem(16);
 }

@@ -39,26 +39,49 @@ $black: #111;
 $white: #fff;
 $ac-color: #2C100F;
 
+body {
+  background-color: $white;
+  color: $ac-color;
+}
+
 ////////////////////
 // メディアクエリとブレークポイントの設定
 ////////////////////
-
 //ブレイクポイント
 $breakpoints: (
-  sm: 600,
-  md: 768,
-  lg: 1024,
+  sm: 375,
+  md: 767,
+  lg: 1023,
+  inner: strip-unit($inner),
   xl: 1440,
 );
 
 
 //メディアクエリー
 $mediaquerys: (
-  sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
-  md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
-  lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+  sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
+  md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+  lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+  inner: "screen and (max-width: #{map-get($breakpoints,'inner')}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
 );
+
+//ブレイクポイント
+// $breakpoints: (
+//   sm: 600,
+//   md: 768,
+//   lg: 1024,
+//   xl: 1440,
+// );
+
+
+// //メディアクエリー
+// $mediaquerys: (
+//   sm: "screen and (min-width: #{map-get($breakpoints,'sm')}px)",
+//   md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
+//   lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
+//   xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+// );
 
 // @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
 @mixin mq($mediaquery: md) {
@@ -71,7 +94,6 @@ $mediaquerys: (
 @function rem($pixels) {
   @return math.div($pixels, 16) * 1rem;
 }
-
 
 ////////////////////
 // 非表示設定

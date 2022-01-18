@@ -3,16 +3,21 @@ body {
   font-family: fot-tsukuardgothic-std, sans-serif;
 }
 
+body {
+  background-color: #fff;
+  color: #2C100F;
+}
+
 .u-desktop {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .u-desktop {
     display: block;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .u-mobile {
     display: none;
   }
@@ -22,24 +27,24 @@ body {
 html {
   font-size: 16px;
 }
-@media (max-width: 375px) {
-  html {
-    font-size: 4.2666666667vw;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: strip-unit(1100px)px) {
   html {
     font-size: 1.4545454545vw;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (max-width: 767px) {
   html {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 4.2666666667vw;
+  }
+}
 
 /* pcの電話番号発信対応 */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   a[href^="tel:"] {
     pointer-events: none;
   }
@@ -52,7 +57,7 @@ a {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   a:hover {
     opacity: 0.8;
   }
@@ -173,6 +178,43 @@ select::-ms-expand {
   display: none;
 }
 
+.about {
+  padding: 0 100px;
+  padding: 0 6.25rem;
+}
+
+.about__inner {
+  background-image: url(../images/common/about__bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding: 100px;
+  padding: 6.25rem;
+  padding-bottom: 200px;
+  padding-bottom: 12.5rem;
+}
+
+.about__text {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  width: 34.7222222222vw;
+  max-width: 700px;
+  max-width: 43.75rem;
+  text-align: center;
+}
+
+.circle-bg {
+  background-image: url(../images/pc/FV.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .header {
   width: 100%;
   height: 80px;
@@ -203,6 +245,8 @@ select::-ms-expand {
   position: relative;
   z-index: 9999;
   width: 32vw;
+  max-width: 150px;
+  max-width: 9.375rem;
 }
 
 .header__logo {
@@ -214,27 +258,28 @@ select::-ms-expand {
 }
 
 .hamburger {
-  z-index: 9999;
+  display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .hamburger {
-    display: none;
+    display: block;
+    z-index: 9999;
   }
 }
 
-.hamburger span {
-  position: relative;
-  display: block;
-  height: 2px;
-  height: 0.125rem;
-  width: 22px;
-  width: 1.375rem;
-  background: #2C100F;
-  border-radius: 0.0625rem;
-  -webkit-transition: -webkit-transform 0.3s ease 0s;
-  transition: -webkit-transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s;
-  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+@media screen and (max-width: 767px) {
+  .hamburger span {
+    position: relative;
+    display: block;
+    height: 0.125rem;
+    width: 1.375rem;
+    background: #2C100F;
+    border-radius: 0.0625rem;
+    -webkit-transition: -webkit-transform 0.3s ease 0s;
+    transition: -webkit-transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s;
+    transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  }
 }
 
 .hamburger span:nth-child(1) {
@@ -287,19 +332,19 @@ select::-ms-expand {
   }
 }
 .drawer-menu {
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   display: none;
-  opacity: 0;
-  -webkit-transition: opacity 1s ease 0s;
-  transition: opacity 1s ease 0s;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .drawer-menu {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: none;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease 0s;
+    transition: opacity 1s ease 0s;
   }
 }
 
@@ -327,12 +372,13 @@ select::-ms-expand {
 }
 
 .drawer-menu__item a {
-  width: inherit;
-  height: inherit;
+  font-family: Julius Sans One, sans-serif;
+  color: #2C100F;
+  letter-spacing: 0.125em;
   font-size: 16px;
   font-size: 1rem;
-  color: #000;
-  letter-spacing: 0.125em;
+  width: inherit;
+  height: inherit;
 }
 
 html.is-fixed {
@@ -347,11 +393,11 @@ pc-nav
 ===========================================*/
 .pc-nav {
   height: inherit;
-  display: none;
+  display: block;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .pc-nav {
-    display: block;
+    display: none;
   }
 }
 
@@ -370,32 +416,48 @@ pc-nav
 }
 
 .pc-nav__item a {
-  height: inherit;
+  font-family: Julius Sans One, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
   display: grid;
   place-items: center;
   padding: 0 17.2px;
   padding: 0 1.075rem;
-  font-size: 16px;
-  font-size: 1rem;
   position: relative;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  letter-spacing: 0.05em;
+  color: #2C100F;
+  height: inherit;
 }
 
-@media screen and (min-width: 768px) {
-  .pc-nav__item a:hover::after {
-    position: absolute;
-    content: "";
-    width: 80%;
-    height: 1px;
-    bottom: 8px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-  }
+.pc-nav__item--contact a {
+  font-family: Julius Sans One, sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.05em;
+  padding: 9px 17.2px;
+  padding: 0.5625rem 1.075rem;
+  background-color: #2C100F;
+  border-radius: 1.875rem;
+  position: relative;
+  place-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.pc-nav__item a:hover::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  bottom: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .pc-nav__item.pc-nav__item--white {
@@ -421,7 +483,7 @@ pc-nav
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .inner {
     max-width: 1150px;
     padding-right: 25px;
@@ -432,19 +494,30 @@ pc-nav
 .main-view {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/sp/sp-FV.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   position: relative;
+}
+@media screen and (max-width: 375px) {
+  .main-view {
+    background-image: url(../images/sp/sp-FV.jpg);
+  }
 }
 
 .main-view__title {
-  color: #2C100F;
+  color: #fff;
+  font-size: 72px;
+  font-size: 4.5rem;
+  font-weight: 400;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.section-title {
+  font-family: Julius Sans One, sans-serif;
+  font-size: 72px;
+  font-size: 4.5rem;
+  font-weight: 400;
 }
 
 .test {

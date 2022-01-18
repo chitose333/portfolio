@@ -1,24 +1,24 @@
 /* リキッドレイアウト対応 */
 @use "global" as *;//scssファイルを作ったら必ず入れる
-
 html {
-  //~375px
-  @media (max-width: 375px) {
-    font-size: vw(375, 16);
-  }
-
-  //375px~787px
   font-size: 16px;
 
-  @include mq("md") {
+  //767px~inner
+  @include mq(inner) {
     font-size: vw(strip-unit($inner), 16);
   }
 
-  //inner~max-screen
-  @media (min-width: $inner) {
+  //スマホ
+  @include mq(md) {
     font-size: 16px;
   }
+
+  //~375px以下
+  @include mq(sm) {
+    font-size: calc(16 / 375 * 100vw);
+  }
 }
+
 
 /* pcの電話番号発信対応 */
 a[href^="tel:"] {
