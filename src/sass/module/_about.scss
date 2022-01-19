@@ -1,24 +1,28 @@
 @use "global" as *;
 
 .about {
-  padding: 0 rem(100);
-}
-
-.about__inner {
+  // padding: 0 rem(100);
   background-image: url(../images/common/about__bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  padding: rem(100);
+}
+
+.about__inner {
+  max-width: rem(800);
+  padding-top: rem(200);
   padding-bottom: rem(200);
+}
+
+.about__title {
+  margin-left: rem(30);
 }
 
 .about__text {
   font-size: rem(16);
   line-height: 1.875;
   letter-spacing: 0.03em;
-  margin-top: rem(40);
+  margin: rem(40) auto 0;
   width: calc( 500 / 1440 * 100vw);
   max-width: rem(700);
-  text-align: center;
 }

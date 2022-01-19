@@ -47,5 +47,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  //Swiper
+  const swiper = new Swiper(".swiper", {
+    //ループ
+    loop: true,
+    // ページネーションが必要なら追加
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    autoplay: {
+      delay: 3000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+      reverseDirection: false
+    },
+    // ナビボタンが必要なら追加
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev"
+    // }
+  });
 });
-

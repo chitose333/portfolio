@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.button {
+  font-size: rem(24);
+  font-weight: $normal;
+  font-family: $second-font-family;
+  color: #333;
+  position: relative;
+  width: rem(220);
+  padding: rem(50) rem(50) rem(50) rem(100);
+
+}
+
+.button::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #333;
+  border-radius: 50%;
+  border-right-color: transparent;
+  height: 100px;
+  width: 100px;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: rem(48);
+  // transform: translateY(-50%);
+  left: rem(37);
+  width: rem(180);
+  height: rem(30);
+  border: none;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  transform: skew(45deg);
+  transition: .3s;
+}
+
+.button:hover::after{
+  width: rem(280);
+
+  @include mq('md'){
+    width: rem(250);
+  }
+}

@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+//paginationを外に出す
+.swiper {
+  padding-bottom: 70px;
+}
+
+.swiper-pagination-bullet {
+  background-color: $l-green;
+  width: rem(20);
+  height: rem(20);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $d-green;
+  width: rem(20);
+  height: rem(20);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: rem(10);
+}

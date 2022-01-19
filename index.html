@@ -21,6 +21,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <!--Swiper-->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- JavaScript -->
@@ -36,6 +40,9 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
+  <!--Swiper-->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--My script-->
   <script defer src="./js/script.js"></script>
 </head>
   <header class="header">
@@ -88,9 +95,29 @@
     <!-- /.about -->
   </div>
   <!-- /.circle__bg -->
-  <section class="works">
-    <div class="works__inner">
+  <section class="works section">
+    <div class="works__inner inner">
       <h2 class="works__title section-title">WORKS</h2>
+      <!-- Slider main container -->
+      <div class="works__container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./src/images/common/works1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./src/images/common/works2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./src/images/common/works3.jpg" alt=""></div>
+          </div>
+          <!-- 必要に応じてページネーション -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--/.swiper-->
+      </div>
+      <!-- /.works__container -->
+      <div class="works-button__container">
+        <a href="#" class="works-button button">MORE</a>
+      </div>
+      <!-- /.works-button__container -->
     </div>
     <!-- /.works__inner -->
   </section>

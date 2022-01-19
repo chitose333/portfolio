@@ -10,6 +10,11 @@
   }
 }
 
+.main-view__inner {
+  width: calc(1000 / 1440 * 100vw);
+  max-width: rem(1000);
+}
+
 .main-view__title {
   color: $white;
   font-size: rem(72);
