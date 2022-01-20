@@ -1,0 +1,40 @@
+@use 'global' as *;
+.contact-step {
+  width: 50%;
+  margin: auto;
+}
+
+.contact-step ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact-step ul::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: rem(27);
+  width: 85%;
+  height: rem(3);
+  background-color: $ac-color;
+  z-index: 0;
+}
+
+.contact-step__number {
+  font-family: $second-font-family;
+  display: inline-block;
+  width: rem(54);
+  height: rem(54);
+  line-height: rem(54);
+  border-radius: 100%;
+  background-color: $l-green;
+  color: $white;
+  font-size: rem(24);
+  text-align: center;
+  z-index: 2;
+}
+
+.contact-step__number.contact-step__number--active {
+  background-color: $d-green;
+}

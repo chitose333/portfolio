@@ -1,0 +1,45 @@
+@use 'global' as *;
+
+.profile {
+  margin-bottom: rem(200);
+}
+
+.profile__inner {
+  max-width: rem(1200);
+}
+
+.profile__container {
+  margin: rem(40) auto 0;
+  max-width: rem(1000);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__img {
+  width: 45%;
+  object-fit: cover;
+}
+
+.profile__right {
+  width: 45%;
+
+}
+
+.profile__name {
+  font-size: rem(48);
+  font-family: 'Noto Sans JP',sans-serif;
+}
+
+
+.profile__skills {
+  width: 100%;
+  margin-top: rem(10);
+}
+
+.profile__text {
+  font-size: rem(16);
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  margin-top: rem(40);
+}

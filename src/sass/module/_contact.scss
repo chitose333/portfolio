@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.contact {
+  padding-top: rem(100);
+  background-color: #ECFFEF;
+  padding-bottom: rem(60);
+}
+
+.contact__inner {
+  max-width: rem(1200);
+}
+
+.contact__container {
+  max-width: rem(800);
+  margin: rem(60) auto rem(106);
+}
+
+.contact__form {
+  margin-top: rem(60);
+}

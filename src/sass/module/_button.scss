@@ -4,7 +4,7 @@
   font-size: rem(24);
   font-weight: $normal;
   font-family: $second-font-family;
-  color: #333;
+  color: $black;
   position: relative;
   width: rem(220);
   padding: rem(50) rem(50) rem(50) rem(100);
@@ -17,11 +17,12 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  border: 1px solid #333;
+  border: 1px solid $black;
   border-radius: 50%;
   border-right-color: transparent;
   height: 100px;
   width: 100px;
+  transition: .3s;
 }
 
 .button::after {
@@ -33,11 +34,15 @@
   width: rem(180);
   height: rem(30);
   border: none;
-  border-right: 1px solid #333;
-  border-bottom: 1px solid #333;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $black;
   transform: skew(45deg);
   transition: .3s;
 }
+
+// .button:hover::before {
+//   transform: rotate(360deg);
+// }
 
 .button:hover::after{
   width: rem(280);

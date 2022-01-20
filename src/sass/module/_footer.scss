@@ -1,0 +1,11 @@
+@use 'global' as *;
+
+.footer {
+  background-color: $ac-color;
+  padding: rem(20) 0;
+}
+
+.footer__logo {
+  width: rem(150);
+  margin: auto;
+}
