@@ -19,6 +19,10 @@
   height: rem(3);
   background-color: $ac-color;
   z-index: 0;
+
+  @include mq('md'){
+    height: rem(2);
+  }
 }
 
 .contact-step__number {
@@ -33,6 +37,12 @@
   font-size: rem(24);
   text-align: center;
   z-index: 2;
+
+  @include mq('md'){
+    width: rem(40);
+    height: rem(40);
+    line-height: rem(40);
+  }
 }
 
 .contact-step__number.contact-step__number--active {

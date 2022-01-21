@@ -9,6 +9,12 @@
   width: rem(220);
   padding: rem(50) rem(50) rem(50) rem(100);
 
+
+  @include mq('md'){
+    font-size: rem(18);
+    width: rem(150);
+    padding: rem(30) rem(30) rem(30) rem(60);
+  }
 }
 
 .button::before {
@@ -23,6 +29,11 @@
   height: 100px;
   width: 100px;
   transition: .3s;
+
+  @include mq('md'){
+    height: 60px;
+    width: 60px;
+  }
 }
 
 .button::after {
@@ -38,6 +49,13 @@
   border-bottom: 1px solid $black;
   transform: skew(45deg);
   transition: .3s;
+
+  @include mq('md'){
+    width: rem(120);
+    height: rem(20);
+    top: rem(31);
+    left: rem(20);
+  }
 }
 
 // .button:hover::before {

@@ -9,14 +9,28 @@
   background-color: $l-green;
   width: rem(20);
   height: rem(20);
+  
+  @include mq('md'){
+    width: rem(10);
+    height: rem(10);
+  }
 }
 
 .swiper-pagination-bullet-active {
   background-color: $d-green;
   width: rem(20);
   height: rem(20);
+
+  @include mq('md'){
+    width: rem(10);
+    height: rem(10);
+  }
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: rem(10);
+
+  @include mq('md'){
+margin-left: rem(5);
+  }
 }

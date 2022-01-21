@@ -12,6 +12,12 @@
   max-width: rem(800);
   padding-top: rem(200);
   padding-bottom: rem(200);
+
+  @include mq('md'){
+    max-width: rem(600);
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
 }
 
 .about__title {
@@ -25,4 +31,9 @@
   margin: rem(40) auto 0;
   width: calc( 500 / 1440 * 100vw);
   max-width: rem(700);
+
+  @include mq('md'){
+    width: calc( 400 / 767 * 100vw);
+    max-width: rem(400);
+  }
 }

@@ -4,6 +4,11 @@
   padding-top: rem(100);
   background-color: #ECFFEF;
   padding-bottom: rem(60);
+
+  @include mq('md'){
+    padding-top: rem(75);
+    padding-bottom: rem(10);
+  }
 }
 
 .contact__inner {
@@ -13,8 +18,16 @@
 .contact__container {
   max-width: rem(800);
   margin: rem(60) auto rem(106);
+
+  @include mq('md'){
+    margin: rem(45) auto rem(140);
+  }
 }
 
 .contact__form {
   margin-top: rem(60);
+
+  @include mq('md'){
+    margin-top: rem(40);
+  }
 }

@@ -1,8 +1,15 @@
+@use 'global' as *;
+
 .circle-bg {
+  width: 100%;  
   background-image: url(../images/pc/FV.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 
+
+  @include mq('md'){
+    background-image: url(../images/sp/sp-FV.jpg);
+  }
 }
