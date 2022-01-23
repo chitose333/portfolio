@@ -196,12 +196,17 @@ select::-ms-expand {
   background-position: center center;
   background-size: contain;
 }
+@media screen and (max-width: 767px) {
+  .about {
+    background-size: cover;
+  }
+}
 
 .about__inner {
   max-width: 800px;
   max-width: 50rem;
-  padding-top: 200px;
-  padding-top: 12.5rem;
+  padding-top: 150px;
+  padding-top: 9.375rem;
   padding-bottom: 200px;
   padding-bottom: 12.5rem;
 }
@@ -223,11 +228,11 @@ select::-ms-expand {
   font-size: 1rem;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  margin: 40px auto 0;
-  margin: 2.5rem auto 0;
-  width: 34.7222222222vw;
-  max-width: 700px;
-  max-width: 43.75rem;
+  margin: 20px auto 0;
+  margin: 1.25rem auto 0;
+  width: 62.5vw;
+  max-width: 900px;
+  max-width: 56.25rem;
 }
 @media screen and (max-width: 767px) {
   .about__text {

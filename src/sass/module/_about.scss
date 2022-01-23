@@ -6,11 +6,15 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+
+  @include mq('md'){
+    background-size: cover;
+  }
 }
 
 .about__inner {
   max-width: rem(800);
-  padding-top: rem(200);
+  padding-top: rem(150);
   padding-bottom: rem(200);
 
   @include mq('md'){
@@ -28,9 +32,9 @@
   font-size: rem(16);
   line-height: 1.875;
   letter-spacing: 0.03em;
-  margin: rem(40) auto 0;
-  width: calc( 500 / 1440 * 100vw);
-  max-width: rem(700);
+  margin: rem(20) auto 0;
+  width: calc( 900 / 1440 * 100vw);
+  max-width: rem(900);
 
   @include mq('md'){
     width: calc( 400 / 767 * 100vw);
