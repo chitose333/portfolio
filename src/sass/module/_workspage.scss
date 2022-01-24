@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.workspage__inner {
+  padding-top: rem(120);
+  padding-bottom: rem(120);
+  padding-left: rem(95);
+  padding-right: rem(95);
+
+  @include mq('md'){
+    padding-top: rem(60);
+    padding-right: rem(20);
+    padding-left: rem(20);
+    padding-bottom: rem(60);
+  }
+}

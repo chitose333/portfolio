@@ -1,0 +1,36 @@
+@use 'global' as *;
+
+.works-flow {
+  font-size: rem(16);
+  padding: rem(8) rem(20);
+  color: $white;
+  border-radius: rem(30);
+  display: inline-block;
+  margin-top: rem(6);
+
+  @include mq('md'){
+    font-size: rem(12);
+    padding: rem(8) rem(15);
+  }
+
+}
+
+.works-flow:not(:first-child) {
+  margin-left: rem(10);
+}
+
+.works-flow.-direction {
+  background-color: #4D8532;
+}
+
+.works-flow.-design {
+  background-color: #BDAC20;
+}
+
+.works-flow.-cording {
+  background-color: #BB6E4C;
+}
+
+.works-flow.-wp {
+  background-color: #3E5298;
+}

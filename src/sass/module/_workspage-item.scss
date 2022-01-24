@@ -1,0 +1,91 @@
+@use 'global' as *;
+
+
+.workspage-item__title {
+  font-weight: $normal;
+  font-size: rem(40);
+
+  @include mq('md'){
+    font-size: rem(20);
+    text-align: center;
+  }
+}
+
+.workspage-item__link {
+  width: 100%;
+  display: block;
+  margin-top: rem(30);
+}
+
+.workspage-item__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq('md'){
+    display: block;
+  }
+
+  @include mq('lg'){
+    display: block;
+  }
+}
+
+.workspage-item__left {
+  width: 45%;
+
+  @include mq('md'){
+    width: 100%;
+    margin-bottom: rem(20);
+  }
+
+  @include mq('lg'){
+    width: 100%;
+    margin-bottom: rem(20);
+  }
+
+}
+
+.workspage-item__img {
+  border-radius: rem(30);
+  object-fit: cover;
+}
+
+.workspage-item__url {
+  font-size: rem(20);
+  text-align: center;
+  margin-top: rem(20);
+
+  @include mq('md'){
+    font-size: rem(16);
+  }
+}
+
+.workspage-item__right {
+  width: 50%;
+
+  @include mq('md'){
+    width: 100%;
+  }
+
+  @include mq('lg'){
+    width: 100%;
+  }
+}
+
+.workspage-item__flows {
+  // display: flex;
+  // justify-content: space-between;
+  text-align: center;
+}
+
+.workspage__text {
+  font-size: rem(30);
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  margin-top: rem(20);
+
+  @include mq('md'){
+    font-size: rem(18);
+  }
+}
