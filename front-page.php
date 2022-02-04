@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("top"); ?>
   <div class="circle-bg">
     <div class="main-view">
       <div class="main-view__inner inner">

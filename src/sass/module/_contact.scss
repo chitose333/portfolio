@@ -2,7 +2,7 @@
 
 .contact {
   padding-top: rem(100);
-  background-color: #ECFFEF;
+  background-color: $bg-green;
   padding-bottom: rem(60);
 
   @include mq('md'){

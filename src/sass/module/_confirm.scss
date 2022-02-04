@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+.confirm {
+  padding-top: rem(80);
+  background-color: $bg-green;
+  padding-bottom: rem(60);
+
+  @include mq('md'){
+    padding-top: rem(75);
+    padding-bottom: rem(10);
+  }
+}
+.confirm__inner {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 100px;
+}
+
+.confirm__container {
+  margin-top: rem(80);
+}
+
+.confirm__row {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 50px;
+
+  @include mq('md'){
+    padding: 0 rem(5);
+  }
+}
+
+.confirm__row:not(:first-child) {
+  margin-top: rem(20);
+}
+
+.confirm__text {
+  font-size: rem(20);
+}

@@ -69,3 +69,39 @@
     width: rem(250);
   }
 }
+
+/*====================================
+# button--little
+====================================*/
+.button.button--little {
+  font-size: rem(18);
+  padding: rem(20) rem(20) rem(20) rem(58);
+
+  // @include mq('md'){
+  //   font-size: rem(14);
+  // }
+}
+
+.button.button--little::before {
+  height: rem(60);
+  width: rem(60);
+  left: rem(16);
+
+  // @include mq('md'){
+  //   height: 40px;
+  //   width: 40px;
+  // }
+}
+
+.button.button--little::after {
+  width: rem(123);
+  height: rem(20);
+  top: rem(22);
+  left: rem(28);
+
+  // @include mq('md'){
+  //   width: rem(80);
+  //   height: rem(20);
+
+  // }
+}

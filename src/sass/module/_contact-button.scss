@@ -1,6 +1,114 @@
 @use 'global' as *;
 
-.contact-button__container {
-  margin: rem(90) auto;
+.contact-button__container, .confirm-button__container {
+  margin: rem(40) auto;
   text-align: center;
+}
+
+.contact-button {
+  position: relative;
+  margin: 0 auto;
+  width: rem(220);
+
+  @include mq('md'){
+    width: rem(180);
+  }
+}
+
+
+
+// .contact-button input {
+//   display: block;
+//   width: rem(200);
+//   position: relative;
+//   top: 26px;
+//   font-size: rem(26);
+//   font-family: $second-font-family;
+// }
+
+.wpcf7 input[type="submit"] {
+  display: block;
+  width: rem(200);
+  position: relative;
+  top: 26px;
+  left: rem(25);
+  font-size: rem(26);
+  font-family: $second-font-family;
+  z-index: 5;
+  padding: rem(30);
+
+  @include mq('md'){
+    text-align: center;
+    font-size: rem(18);
+    width: initial;
+    padding: rem(16) rem(30) rem(35);
+  }
+}
+
+.wpcf7 input[type="button"] {
+  display: inline-block !important;
+  text-align: center;
+  width: rem(100);
+  font-family: $second-font-family;
+}
+
+// .wpcf7-previous {
+//   display: inline-block !important;
+
+// }
+
+.contact-button::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid $black;
+  border-radius: 50%;
+  border-right-color: transparent;
+  height: 100px;
+  width: 100px;
+  transition: .3s;
+
+  @include mq('md'){
+    height: rem(60);
+    width: rem(60);
+  }
+}
+
+.contact-button::after {
+  content: "";
+  position: absolute;
+  top: rem(90);
+  // transform: translateY(-50%);
+  left: rem(37);
+  width: rem(180);
+  height: rem(30);
+  border: none;
+  border-right: 1px solid $black;
+  border-bottom: 1px solid $black;
+  transform: skew(45deg);
+  transition: .3s;
+
+  @include mq('md'){
+    width: rem(150);
+    height: rem(20);
+    top: 45%;
+    left: rem(20);
+  }
+}
+// .contact-button::after {
+//   top: rem(92);
+//   width: rem(230);
+// }
+// .contact-button:hover::after {
+//   width: rem(280);
+
+//   @include mq('md'){
+//     width: rem(180);
+//   }
+// }
+
+.wpcf7-spinner {
+  display: none;
 }
