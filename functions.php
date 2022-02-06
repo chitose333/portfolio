@@ -4,7 +4,8 @@
 */
 function my_scripts(){
   wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css?family=Julius+Sans+One&family|Noto+Sans+JP:wght@300;400;500&display=swap');
-
+  // wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css2?family=Dancing+Script&family|Julius+Sans+One&family|Noto+Sans+JP:wght@300;400;500&display=swap');
+  // <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Julius+Sans+One&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
   wp_enqueue_style('Swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css');
 
   wp_enqueue_style('my-css', get_theme_file_uri('/css/styles.css'), array(), '1.0.0', 'all');

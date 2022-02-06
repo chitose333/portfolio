@@ -9,12 +9,16 @@
   <meta name="description" content="<?php bloginfo('description'); ?>" />
   <meta name="keywords" content="" />
   <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
+  <meta property="og:title" content="C-links" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chitoseworks.com/" />
+  <meta property="og:image" content="https://chitoseworks.com/wp-content/themes/portfolio/screenshot.png" />
+  <meta property="og:description" content="Webをとおして、ひとと想いをつなげます。C-links" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@chitose_333" />
+  <meta name="twitter:title" content="Web制作 C-links" />
+  <meta name="twitter:description" content="Webをとおして、ひとと想いをつなげます。" />
+  <meta name="twitter:image" content="https://chitoseworks.com/wp-content/themes/portfolio/screenshot.png" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
   <!--google fonts-->
@@ -58,7 +62,7 @@
       <div class="header__left">
         <a class="header__logo" href="#">
           <!-- <img src="<?php echo get_template_directory_uri() ?>/images/common/logo.png" alt="ロゴ"> -->
-          <img src="<?php echo get_template_directory_uri() ?>/images/common/logo.jpg" alt="ロゴ">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/header__logo.png" alt="ロゴ">
         </a>
       </div>
       <a id="MenuButton" href="#" class="sp-header__drawer hamburger js-drawer-open">

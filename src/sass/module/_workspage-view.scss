@@ -8,6 +8,7 @@
   background-position: center center;
   background-size: cover;
   padding-top: rem(80);
+  text-align: center;
 
   @include mq('md'){
 
@@ -19,8 +20,10 @@
   font-size: rem(72);
   font-weight: $regular;
   display: block;
-  padding: rem(100);
+  padding-top: rem(100);
+  padding-bottom: rem(30);
   text-align: center;
+  line-height: 1;
   // position: absolute;
   // top: 50%;
   // transform: translateY(-50%);
@@ -30,5 +33,14 @@
   @include mq('md'){
     font-size: rem(42);
     padding: rem(40);
+  }
+}
+
+.workspage-view__subtitle {
+  font-size: rem(20);
+  padding-bottom: rem(100);
+
+  @include mq('md'){
+    font-size: rem(16);
   }
 }

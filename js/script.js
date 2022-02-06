@@ -40,7 +40,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-drawer-menu__bg").toggleClass("open");
     $("html").toggleClass("is-fixed");
   });
-  
+
+  //headerの背景色変化
+  $( window ).on( 'scroll', function() {
+    // let mainview = $('mainview').innerHeight();
+    if ( jQuery('.circle-bg').height() < jQuery( this ).scrollTop() ) {
+      jQuery( '.header' ).addClass( 'change-color' );
+    } else { jQuery( '.header' ).removeClass( 'change-color' );
+    }
+  });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 

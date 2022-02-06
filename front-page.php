@@ -12,7 +12,7 @@
         <h2 class="about__title section-title">ABOUT</h2>
         <p class="about__text">
           C-linksでは、<br>
-          「デザインの確実な再現と<br>
+          「デザインの確実な再現・<br>
           保守性を意識したコーディング」と、<br>
           クライアント様に寄り添い<br>
           「デザインから納品まで一貫したサイト制作」を<br>
@@ -57,7 +57,7 @@
       <p class="profile__name u-mobile">chitose</p>
       <div class="profile__container">
         <div class="profile__img">
-          <img src="<?php echo get_template_directory_uri() ?>/images/common/works1.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/profile.png" alt="">
         </div>
         <div class="profile__right">
           <p class="profile__name u-desktop">chitose</p>
