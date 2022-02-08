@@ -63,27 +63,27 @@
           <img src="<?php echo get_template_directory_uri() ?>/images/common/header__logo.png" alt="ロゴ">
         </a>
       </div>
-      <!-- <a id="MenuButton" href="#" class="sp-header__drawer hamburger js-drawer-open">
+      <a id="MenuButton" href="#" class="sp-header__drawer hamburger js-drawer-open">
         <span></span>
         <span></span>
         <span></span>
       </a>
       <nav class="header__drawer drawer-menu">
         <ul class="drawer-menu__items">
-          <li class="drawer-menu__item"><a href="#about">ABOUT</a></li>
-          <li class="drawer-menu__item"><a href="#works">WORKS</a></li>
-          <li class="drawer-menu__item"><a href="#profile">PROFILE</a></li>
-          <li class="drawer-menu__item"><a href="#contact">CONTACT</a></li>
+          <li class="drawer-menu__item"><a href="<?php echo esc_url( home_url() ); ?>#about">ABOUT</a></li>
+          <li class="drawer-menu__item"><a href="<?php echo esc_url( home_url() ); ?>#works">WORKS</a></li>
+          <li class="drawer-menu__item"><a href="<?php echo esc_url( home_url() ); ?>#profile">PROFILE</a></li>
+          <li class="drawer-menu__item--contact"><a href="<?php echo esc_url( home_url() ); ?>#contact">CONTACT</a></li>
         </ul>
       </nav>
       <nav class="header__nav pc-nav">
         <ul class="pc-nav__items">
-          <li class="pc-nav__item"><a href="#about">ABOUT</a></li>
-          <li class="pc-nav__item"><a href="#works">WORKS</a></li>
-          <li class="pc-nav__item"><a href="#profile">PROFILE</a></li>
-          <li class="pc-nav__item--contact"><a href="#contact">CONTACT</a></li>
+          <li class="pc-nav__item"><a href="<?php echo esc_url( home_url() ); ?>#about">ABOUT</a></li>
+          <li class="pc-nav__item"><a href="<?php echo esc_url( home_url() ); ?>#works">WORKS</a></li>
+          <li class="pc-nav__item"><a href="<?php echo esc_url( home_url() ); ?>#profile">PROFILE</a></li>
+          <li class="pc-nav__item--contact"><a href="<?php echo esc_url( home_url() ); ?>#contact">CONTACT</a></li>
         </ul>
-      </nav> -->
+      </nav>
     </div>
     <!-- /.header__inner -->
   </header>

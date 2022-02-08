@@ -75,7 +75,7 @@
           <li class="drawer-menu__item"><a href="#about">ABOUT</a></li>
           <li class="drawer-menu__item"><a href="#works">WORKS</a></li>
           <li class="drawer-menu__item"><a href="#profile">PROFILE</a></li>
-          <li class="drawer-menu__item"><a href="#contact">CONTACT</a></li>
+          <li class="drawer-menu__item--contact"><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
       <nav class="header__nav pc-nav">

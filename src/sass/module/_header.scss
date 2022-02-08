@@ -142,6 +142,22 @@
   height: inherit;
 }
 
+.drawer-menu__item--contact {
+  text-align: center;
+}
+
+.drawer-menu__item--contact a {
+  font-family: $second-font-family;
+  background-color: $ac-color;;
+  color: $white;
+  letter-spacing: 0.125em;
+  font-size: rem(16);
+  width: inherit;
+  height: inherit;
+  padding: rem(10) rem(15);
+  border-radius: rem(20);
+}
+
 html.is-fixed {
   position: fixed;
   top: 0;
@@ -184,6 +200,11 @@ pc-nav
   height: inherit;
 }
 
+.pc-nav__item a:hover {
+  color: $hover;
+  font-weight: bold;
+}
+
 .pc-nav__item--contact a {
   font-family: $second-font-family;
   font-size: rem(24);
@@ -198,34 +219,7 @@ pc-nav
   // height: inherit;
   transition: all 0.3s ease 0s;
 }
-.pc-nav__item a:hover::after {
-  position: absolute;
-  content:"";
-  width: 80%;
-  height: 1px;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  // background-color: $yellow;
-  box-sizing: content-box;
-}
 
-.pc-nav__item.pc-nav__item--white {
-  margin-left: rem(16);
-}
-
-.pc-nav__item.pc-nav__item--white a {
-  background-color: $white;
-  padding: 0 rem(32);
-  // color: $gray;
-  letter-spacing: 0.1em;
-}
-
-.pc-nav__item.pc-nav__item--white a:hover {
-  // background-color: $gray;
-  // color: $white;
-}
-
-.pc-nav__item.pc-nav__item--white a:hover::after {
-  display: none;
+.pc-nav__item--contact a:hover {
+  background-color: $hover;
 }

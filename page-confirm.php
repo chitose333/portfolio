@@ -24,7 +24,7 @@
             </p>
           </div> -->
           <!-- /.confirm-row -->
-            <?php echo do_shortcode( '[contact-form-7 id="13" title="コンタクトフォーム２"]'); ?>
+            <!-- <?php echo do_shortcode( '[contact-form-7 id="13" title="コンタクトフォーム２"]'); ?> -->
         </div>
         <!-- /.contact__form contact-form -->
       </div>
