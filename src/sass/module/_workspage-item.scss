@@ -8,6 +8,7 @@
   @include mq('md'){
     font-size: rem(32);
     text-align: center;
+    line-height: 1.2;
   }
 }
 
@@ -20,7 +21,7 @@
 .workspage-item__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   margin-top: rem(20);
 
   @include mq('md'){
@@ -43,10 +44,10 @@
 }
 
 .workspage-item:not(:first-child) {
-  margin-top: rem(40);
+  margin-top: rem(60);
 
   @include mq('md'){
-    margin-top: rem(60);
+    margin-top: rem(80);
   }
 }
 
@@ -124,7 +125,7 @@
 }
 
 .workspage-item__point-container {
-  margin-top: rem(20);
+  margin-top: rem(30);
 }
 
 .workspage-item__point {
