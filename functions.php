@@ -3,16 +3,14 @@
 * CSSとJavaScriptの読み込み
 */
 function my_scripts(){
-  wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css?family=Julius+Sans+One&family|Noto+Sans+JP:wght@300;400;500&display=swap');
-  // wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css2?family=Dancing+Script&family|Julius+Sans+One&family|Noto+Sans+JP:wght@300;400;500&display=swap');
-  // <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Julius+Sans+One&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
   wp_enqueue_style('Swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css');
 
   wp_enqueue_style('my-css', get_theme_file_uri('/css/styles.css'), array(), '1.0.0', 'all');
 
   wp_enqueue_script('Swiper-script', 'https://unpkg.com/swiper@7/swiper-bundle.min.js' , array( 'jquery' ));
 
-  //ほんとはここにAdobe-Fonts読み込みたかった
 
   wp_enqueue_script('my-script', get_theme_file_uri('/js/script.js'));
 }

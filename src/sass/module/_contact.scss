@@ -17,17 +17,17 @@
 
 .contact__container {
   max-width: rem(800);
-  margin: rem(60) auto rem(106);
+  margin: 0 auto rem(106);
 
   @include mq('md'){
-    margin: rem(45) auto rem(140);
+    margin: 0 auto rem(140);
   }
 }
 
 .contact__form {
-  margin-top: rem(60);
+  // margin-top: rem(60);
 
-  @include mq('md'){
-    margin-top: rem(40);
-  }
+  // @include mq('md'){
+  //   margin-top: rem(40);
+  // }
 }

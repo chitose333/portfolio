@@ -11,6 +11,19 @@
     line-height: 1.2;
   }
 }
+.workspage-item:nth-child(even) {
+  .workspage-item__title {
+    text-align: right;
+
+    @include mq('md'){
+      text-align: center;
+    }
+
+    @include mq('lg'){
+      text-align: center;
+    }
+  }
+}
 
 .workspage-item__link {
   width: 100%;
@@ -44,7 +57,7 @@
 }
 
 .workspage-item:not(:first-child) {
-  margin-top: rem(60);
+  margin-top: rem(120);
 
   @include mq('md'){
     margin-top: rem(80);
@@ -108,9 +121,15 @@
 }
 
 .workspage-item__flows {
-  // display: flex;
-  // justify-content: space-between;
-  text-align: center;
+  text-align: left;
+
+  @include mq('md'){
+    text-align: center;
+  }
+
+  @include mq('lg'){
+    text-align: center;
+  }
 }
 
 .workspage-item__text {
@@ -160,4 +179,9 @@
   list-style: decimal;
   list-style-position: inside;
   line-height: 1.7;
+  font-size: rem(20);
+
+  @include mq('md'){
+    font-size: rem(16);
+  }
 }

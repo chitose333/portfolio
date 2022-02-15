@@ -9,7 +9,7 @@
     <!-- /.main-view -->
     <section id="about" class="about">
       <div class="about__inner inner">
-        <h2 class="about__title section-title">ABOUT</h2>
+        <h2 class="section-title">ABOUT</h2>
         <p class="about__text">
           C-linksでは、<br>
           「デザインの確実な再現・<br>
@@ -97,13 +97,13 @@
     <div class="contact__inner inner">
       <h2 class="section-title contact__title">Contact</h2>
       <div class="contact__container">
-        <div class="contact__step contact-step">
+        <!-- <div class="contact__step contact-step">
           <ul>
             <li class="contact-step__number contact-step__number--active">1</li>
             <li class="contact-step__number">2</li>
             <li class="contact-step__number">3</li>
           </ul>
-        </div>
+        </div> -->
         <div class="contact__form contact-form">
           <!-- <form > -->
             <!-- <dl class="contact_list contact-form">

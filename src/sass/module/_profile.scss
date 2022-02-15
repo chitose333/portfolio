@@ -8,6 +8,10 @@
   }
 }
 
+.profile__title {
+  margin-bottom: rem(30);
+}
+
 .profile__inner {
   max-width: rem(1200);
 }
@@ -49,7 +53,6 @@
 
 .profile__name {
   font-size: rem(48);
-  font-family: 'Noto Sans JP',sans-serif;
 }
 
 

@@ -13,10 +13,13 @@
       <div class="workspage-item__container">
         <div class="workspage-item__left">
           <img class="workspage-item__img" src="<?php echo get_template_directory_uri() ?>/images/common/works2.jpg" alt="実績１">
-          <!-- <a class="workspage-item__url">https://kakera-nakijin.com/</a> -->
-          <div class="workspage-item__button">
-            <a href="https://kakera-nakijin.com/" class="button button--little" target="_blank">check it</a>
+          <div class="btn-container u-desktop">
+            <div class="workspage-item__button">
+              <a href="https://kakera-nakijin.com/" class="button button--little" target="_blank">check it</a>
+            </div>
+
           </div>
+          <!-- /.btn-container -->
         </div>
         <div class="workspage-item__right">
           <div class="workspage-item__flows">
@@ -39,6 +42,12 @@
             </ol>
           </div>
           <!-- /.workspage-item__point-container -->
+          <div class="btn-container u-mobile">
+            <div class="workspage-item__button">
+              <a href="https://kakera-nakijin.com/" class="button button--little" target="_blank">check it</a>
+            </div>
+          </div>
+          <!-- /.btn-container -->
         </div>
       </div>
       <!-- /.workspage-item__container -->
@@ -49,10 +58,12 @@
       <div class="workspage-item__container">
         <div class="workspage-item__left">
           <img class="workspage-item__img" src="<?php echo get_template_directory_uri() ?>/images/common/works1.jpg" alt="実績１">
-          <!-- <a class="workspage-item__url">https://kakera-nakijin.com/</a> -->
-          <div class="workspage-item__button">
-            <a href="https://eri-flower.tokyo" class="button button--little" target="_blank">check it</a>
+          <div class="btn-container u-desktop">
+            <div class="workspage-item__button ">
+              <a href="https://eri-flower.tokyo" class="button button--little" target="_blank">check it</a>
+            </div>
           </div>
+          <!-- /.btn-container u-desktop -->
         </div>
         <div class="workspage-item__right">
           <div class="workspage-item__flows">
@@ -75,7 +86,12 @@
             </ol>
           </div>
           <!-- /.workspage-item__point-container -->
-
+          <div class="btn-container u-mobile">
+            <div class="workspage-item__button">
+              <a href="https://eri-flower.tokyo" class="button button--little" target="_blank">check it</a>
+            </div>
+          </div>
+          <!-- /.btn-container u-mobile -->
         </div>
       </div>
       <!-- /.workspage-item__container -->
@@ -86,16 +102,25 @@
       <div class="workspage-item__container">
         <div class="workspage-item__left">
           <img class="workspage-item__img" src="<?php echo get_template_directory_uri() ?>/images/common/works3.jpg" alt="実績3">
-          <!-- <a class="workspage-item__url">https://kakera-nakijin.com/</a> -->
-          <div class="workspage-item__button">
-            <a href="https://chitose.namaste.jp/positive/" class="button button--little" target="_blank">check it</a>
-          </div>
-          <p class="workspage-item__basic">
-            Basic認証<br>
+          <div class="btn-container u-desktop">
+            <div class="workspage-item__button">
+              <a href="https://chitose.namaste.jp/positive/" class="button button--little" target="_blank">check it</a>
+            </div>
+            <p class="workspage-item__basic">
+            Basic認証をかけています。<br>
             <span>
               ユーザー名：chitose <br class="u-mobile">/ パスワード：positive
             </span>
           </p>
+
+          </div>
+          <!-- /.btn-container u-desktop -->
+          <!-- <p class="workspage-item__basic">
+            Basic認証<br>
+            <span>
+              ユーザー名：chitose <br class="u-mobile">/ パスワード：positive
+            </span>
+          </p> -->
         </div>
         <div class="workspage-item__right">
           <div class="workspage-item__flows">
@@ -118,7 +143,19 @@
             </ol>
           </div>
           <!-- /.workspage-item__point-container -->
+          <div class="btn-container u-mobile">
+            <div class="workspage-item__button">
+              <a href="https://chitose.namaste.jp/positive/" class="button button--little" target="_blank">check it</a>
+            </div>
+            <p class="workspage-item__basic">
+            Basic認証をかけています。<br>
+            <span>
+              ユーザー名：chitose <br class="u-mobile">/ パスワード：positive
+            </span>
+          </p>
 
+          </div>
+          <!-- /.btn-container u-desktop -->
         </div>
       </div>
       <!-- /.workspage-item__container -->

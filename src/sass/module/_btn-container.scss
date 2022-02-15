@@ -1,0 +1,16 @@
+@use 'global' as *;
+
+.btn-container.u-mobile {
+  text-align: center;
+  margin-top: rem(20);
+
+  @include mq('lg'){
+    display: block;
+  }
+}
+
+.btn-container.u-desktop {
+  @include mq('lg'){
+    display: none;
+  }
+}
