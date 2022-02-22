@@ -1352,6 +1352,10 @@ pc-nav
   background-color: #7B3E98;
 }
 
+.works-flow.-wp {
+  background-color: #3E5298;
+}
+
 .works__inner {
   max-width: 1200px;
   max-width: 75rem;

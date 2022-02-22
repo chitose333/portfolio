@@ -9,6 +9,54 @@
   <!-- /.workspage-view -->
   <div class="workspage__inner inner">
     <div class="workspage__item workspage-item">
+      <h2 class="workspage-item__title">コーポレートサイト</h2>
+      <div class="workspage-item__container">
+        <div class="workspage-item__left">
+          <img class="workspage-item__img" src="<?php echo get_template_directory_uri() ?>/images/common/works5.jpg" alt="実績１">
+          <div class="btn-container u-desktop">
+            <div class="workspage-item__button">
+              <a href="http://chitose333.xsrv.jp/corporate/" class="button button--little" target="_blank">check it</a>
+            </div>
+
+          </div>
+          <!-- /.btn-container -->
+        </div>
+        <div class="workspage-item__right">
+          <div class="workspage-item__flows">
+            <p class="works-flow -cording">コーディング</p>
+            <p class="works-flow -wp">WordPress化</p>
+            <p class="works-flow -animation">アニメーション</p>
+          </div>
+          <!-- /.workspage-item__flows-->
+          <p class="workspage-item__text">
+          コーポレートサイトの例として、トップページと下層11ページで構成された、ブライダル会社のサイトを制作しました。
+          通常のニュース投稿はもちろん、カスタム投稿にてブログ・worksページを実装。タクソノミーを使用してカスタム投稿にもアーカイブページを設置しました。
+          </p>
+          <div class="workspage-item__point-container">
+            <p class="workspage-item__point">Points.</p>
+            <ol class="workspage-item__list">
+              <li>WordPressオリジナルテーマ化</li>
+              <li>カスタム投稿機能（ブログ・挙式〜ご紹介ページ）</li>
+              <li>カスタムタクソノミーを使用してカスタム投稿のアーカイブページ作成</li>
+              <li>カスタムフィールドにて投稿作成できるように</li>
+              <li>関連記事で同じジャンルの記事を出力</li>
+              <li>トップページでworksページの最新３画像をSwiperで表示</li>
+              <li>記事詳細ページでSwiperにてサムネイルと画像を連動</li>
+            </ol>
+          </div>
+          <!-- /.workspage-item__point-container -->
+          <div class="btn-container u-mobile">
+            <div class="workspage-item__button">
+              <a href="http://chitose333.xsrv.jp/corporate/" class="button button--little" target="_blank">check it</a>
+            </div>
+          </div>
+          <!-- /.btn-container -->
+        </div>
+      </div>
+      <!-- /.workspage-item__container -->
+    </div>
+    <!-- /.workspage__item -->
+    <div class="workspage__item workspage-item">
       <h2 class="workspage-item__title">レンタルスペースkakera様 LP</h2>
       <div class="workspage-item__container">
         <div class="workspage-item__left">
