@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: fot-tsukuardgothic-std, "Noto Sans JP", sans-serif;
+  font-family: fot-tsukuardgothic-std, sans-serif;
 }
 
 body {
@@ -218,11 +218,6 @@ select::-ms-expand {
   }
 }
 
-.about__title {
-  margin-left: 30px;
-  margin-left: 1.875rem;
-}
-
 .about__text {
   font-size: 16px;
   font-size: 1rem;
@@ -236,8 +231,8 @@ select::-ms-expand {
 }
 @media screen and (max-width: 767px) {
   .about__text {
-    width: 52.1512385919vw;
-    max-width: 25rem;
+    width: 100%;
+    max-width: 31.25rem;
   }
 }
 
@@ -516,7 +511,7 @@ select::-ms-expand {
   display: none;
 }
 
-.contact-form_row:not(:first-child) {
+.contact-form_row:last-child {
   margin-top: 30px;
   margin-top: 1.875rem;
 }
@@ -695,16 +690,6 @@ select::-ms-expand {
 @media screen and (max-width: 767px) {
   .contact__container {
     margin: 2.8125rem auto 8.75rem;
-  }
-}
-
-.contact__form {
-  margin-top: 60px;
-  margin-top: 3.75rem;
-}
-@media screen and (max-width: 767px) {
-  .contact__form {
-    margin-top: 2.5rem;
   }
 }
 
@@ -1124,7 +1109,7 @@ pc-nav
 .profile__name {
   font-size: 48px;
   font-size: 3rem;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: fot-tsukuardgothic-std, sans-serif;
 }
 
 .profile__skills {
@@ -1318,6 +1303,16 @@ pc-nav
 .works__inner {
   max-width: 1200px;
   max-width: 75rem;
+}
+
+.works__container {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+}
+@media screen and (max-width: 767px) {
+  .works__container {
+    margin-top: 1.875rem;
+  }
 }
 
 .workspage-item__title {

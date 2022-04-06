@@ -3,7 +3,8 @@
 * CSSとJavaScriptの読み込み
 */
 function my_scripts(){
-  wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css?family=Julius+Sans+One&family|Noto+Sans+JP:wght@300;400;500&display=swap');
+  // wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css?family=Julius+Sans+One&family|Noto+Sans+JP:wght@300;400;500&display=swap');
+  wp_enqueue_style('GoogleFonts', 'https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
   wp_enqueue_style('Swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css');
 

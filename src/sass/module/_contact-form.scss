@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.contact-form_row:not(:first-child) {
+.contact-form_row:last-child {
   margin-top: rem(30);
 
 }
@@ -40,7 +40,7 @@
     color: inherit;
     font-family: inherit;
     transition: all 0.3s ease 0s;
-    
+
 
     &:hover {
       box-shadow: 0 0 6px rgba(44, 16, 15, 0.5);
