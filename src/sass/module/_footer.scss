@@ -6,6 +6,12 @@
 }
 
 .footer__logo {
-  width: rem(150);
+  width: rem(40);
   margin: auto;
+}
+
+.footer__copyright {
+  color: $white;
+  text-align: center;
+  margin-top: rem(5);
 }

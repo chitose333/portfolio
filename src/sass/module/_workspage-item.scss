@@ -8,6 +8,20 @@
   @include mq('md'){
     font-size: rem(32);
     text-align: center;
+    line-height: 1.2;
+  }
+}
+.workspage-item:nth-child(even) {
+  .workspage-item__title {
+    text-align: right;
+
+    @include mq('md'){
+      text-align: center;
+    }
+
+    @include mq('lg'){
+      text-align: center;
+    }
   }
 }
 
@@ -20,7 +34,7 @@
 .workspage-item__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   margin-top: rem(20);
 
   @include mq('md'){
@@ -43,10 +57,10 @@
 }
 
 .workspage-item:not(:first-child) {
-  margin-top: rem(40);
+  margin-top: rem(120);
 
   @include mq('md'){
-    margin-top: rem(20);
+    margin-top: rem(80);
   }
 }
 
@@ -72,16 +86,6 @@
   object-fit: cover;
 }
 
-.workspage-item__url {
-  font-size: rem(20);
-  text-align: center;
-  margin-top: rem(20);
-
-  @include mq('md'){
-    font-size: rem(16);
-  }
-}
-
 .workspage-item__button {
   display: inline-block;
   margin: rem(40) auto;
@@ -89,6 +93,19 @@
   @include mq('md'){
     margin: rem(40) auto;
   }
+}
+
+.workspage-item__basic {
+  font-size: rem(24);
+
+  @include mq('md'){
+    font-size: rem(18);
+  }
+}
+
+.workspage-item__basic span {
+  font-size: rem(16);
+  line-height: 1.2;
 }
 
 .workspage-item__right {
@@ -104,12 +121,18 @@
 }
 
 .workspage-item__flows {
-  // display: flex;
-  // justify-content: space-between;
-  text-align: center;
+  text-align: left;
+
+  @include mq('md'){
+    text-align: center;
+  }
+
+  @include mq('lg'){
+    text-align: center;
+  }
 }
 
-.workspage__text {
+.workspage-item__text {
   font-size: rem(24);
   line-height: 1.65;
   letter-spacing: 0.03em;
@@ -117,5 +140,48 @@
 
   @include mq('md'){
     font-size: rem(18);
+  }
+}
+
+.workspage-item__point-container {
+  margin-top: rem(30);
+}
+
+.workspage-item__point {
+  font-size: rem(30);
+  font-family: $second-font-family;
+  display: inline-block;
+  padding-bottom: rem(4);
+  position: relative;
+  line-height: 1;
+
+  @include mq('md'){
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.workspage-item__point::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: rem(1);
+  bottom: 0;
+  left: 0;
+  background-color: $d-green;
+}
+
+.workspage-item__list {
+  margin-top: rem(10);
+}
+
+.workspage-item__list li{
+  list-style: decimal;
+  list-style-position: inside;
+  line-height: 1.7;
+  font-size: rem(20);
+
+  @include mq('md'){
+    font-size: rem(16);
   }
 }

@@ -5,11 +5,15 @@
   padding-bottom: 70px;
 }
 
+.swiper-slide img {
+  border-radius: rem(20);
+}
+
 .swiper-pagination-bullet {
   background-color: $l-green;
   width: rem(20);
   height: rem(20);
-  
+
   @include mq('md'){
     width: rem(10);
     height: rem(10);

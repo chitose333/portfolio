@@ -5,9 +5,13 @@
 }
 
 .works__container {
+<<<<<<< HEAD
   margin-top: rem(70);
 
   @include mq('md'){
     margin-top: rem(30);
   }
+=======
+  margin-top: rem(30);
+>>>>>>> 1b70dd424ed620d7c6db068717a0846a7364ec2a
 }

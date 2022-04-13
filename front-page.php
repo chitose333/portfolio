@@ -9,13 +9,13 @@
     <!-- /.main-view -->
     <section id="about" class="about">
       <div class="about__inner inner">
-        <h2 class="about__title section-title">ABOUT</h2>
+        <h2 class="section-title">ABOUT</h2>
         <p class="about__text">
           C-linksでは、<br>
-          「デザインの確実な再現と<br>
+          「デザインの確実な再現・<br>
           保守性を意識したコーディング」と、<br>
           クライアント様に寄り添い<br>
-          「デザインから納品まで一貫したサイト制作」を<br>
+          「デザインから納品まで一貫したサイト制作」を
           行っております。
         </p>
       </div>
@@ -57,7 +57,7 @@
       <p class="profile__name u-mobile">chitose</p>
       <div class="profile__container">
         <div class="profile__img">
-          <img src="<?php echo get_template_directory_uri() ?>/images/common/works1.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/profile.png" alt="">
         </div>
         <div class="profile__right">
           <p class="profile__name u-desktop">chitose</p>
@@ -97,13 +97,13 @@
     <div class="contact__inner inner">
       <h2 class="section-title contact__title">Contact</h2>
       <div class="contact__container">
-        <div class="contact__step contact-step">
+        <!-- <div class="contact__step contact-step">
           <ul>
             <li class="contact-step__number contact-step__number--active">1</li>
             <li class="contact-step__number">2</li>
             <li class="contact-step__number">3</li>
           </ul>
-        </div>
+        </div> -->
         <div class="contact__form contact-form">
           <!-- <form > -->
             <!-- <dl class="contact_list contact-form">

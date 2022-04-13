@@ -8,6 +8,10 @@
   }
 }
 
+.profile__title {
+  margin-bottom: rem(30);
+}
+
 .profile__inner {
   max-width: rem(1200);
 }
@@ -30,10 +34,15 @@
   object-fit: cover;
 
   @include mq('md'){
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 }
 
+.profile__img img {
+  border-radius: rem(30);
+
+}
 .profile__right {
   width: 45%;
 
@@ -44,7 +53,10 @@
 
 .profile__name {
   font-size: rem(48);
+<<<<<<< HEAD
   font-family: $base-font-family;
+=======
+>>>>>>> 1b70dd424ed620d7c6db068717a0846a7364ec2a
 }
 
 
@@ -60,6 +72,9 @@
   margin-top: rem(40);
 
   @include mq('md'){
-    margin-top: rem(20);
+    width: 100%;
+    max-width: rem(500);
+    // margin-left: auto;
+    margin: rem(20) auto 0;
   }
 }

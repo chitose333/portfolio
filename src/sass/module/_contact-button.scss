@@ -30,7 +30,7 @@
   display: block;
   width: rem(200);
   position: relative;
-  top: 26px;
+  // top: 26px;
   left: rem(25);
   font-size: rem(26);
   font-family: $second-font-family;
@@ -41,7 +41,7 @@
     text-align: center;
     font-size: rem(18);
     width: initial;
-    padding: rem(16) rem(30) rem(35);
+    padding: rem(20) rem(30) rem(23);
   }
 }
 
@@ -79,7 +79,7 @@
 .contact-button::after {
   content: "";
   position: absolute;
-  top: rem(90);
+  top: rem(58);
   // transform: translateY(-50%);
   left: rem(37);
   width: rem(180);
@@ -96,6 +96,10 @@
     top: 45%;
     left: rem(20);
   }
+}
+
+.contact-button:hover::after {
+  width: rem(210);
 }
 // .contact-button::after {
 //   top: rem(92);
